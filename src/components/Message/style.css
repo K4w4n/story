@@ -1,0 +1,33 @@
+.msg-player,
+.msg-other {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+.msg-player {
+    align-items: flex-end;
+}
+
+.msg-other {
+    align-items: flex-start;
+}
+
+.message {
+    max-width: 75%;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #00000010;
+}
+
+.msg-player .message {
+    background-color: rgb(82, 82, 201);
+    color: rgb(29 29 126);
+    border-radius: 1rem 0 1rem 1rem;
+}
+
+.msg-other .message {
+    background-color: #fff;
+    color: rgb(59, 59, 59);
+    border-radius: 0rem 1rem 1rem 1rem;
+}

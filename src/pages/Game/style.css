@@ -1,0 +1,78 @@
+.game-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-page-header {
+    background-color: rgba(255, 255, 255, 0.01);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game-page-header,
+.game-page-chat {
+    width: min(50rem, 100%);
+}
+
+.game-page-header-title {
+    color: rgb(255, 255, 255);
+}
+
+.game-page-header-translate {
+    transition: background-color 0.25s linear;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #272727;
+    color: #6b6b6b;
+}
+
+.game-page-header-translate:hover {
+    background-color: #333333;
+
+}
+
+.game-page-chat {
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.01);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+}
+
+.btn-send-action {
+    transition: background-color 0.25s linear;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(29, 29, 167);
+    color: rgb(5, 5, 83);
+}
+
+.btn-send-action:hover {
+    background-color: rgb(19, 19, 116);
+    color: rgb(2, 2, 26);
+}
+
+/* @media screen and (max-width: 768px) {
+    .game-page-header,
+    .game-page-chat {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+    .message {
+        max-width: 95%;
+    }
+}
