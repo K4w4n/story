@@ -2,7 +2,40 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.game-list-content {
+    flex: 1;
+}
+
+.story-list-item {
+    transition: background-color 0.25s linear;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.01);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.story-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.034);
+
+}
+
+.game-content {
+    flex: 2;
+    padding: 1rem;
+    display: flex;
     flex-direction: column;
 }
 
@@ -10,7 +43,6 @@
     background-color: rgba(255, 255, 255, 0.01);
     padding: 1rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -19,10 +51,12 @@
 
 .game-page-header,
 .game-page-chat {
-    width: min(50rem, 100%);
+    width: 100%;
 }
 
 .game-page-header-title {
+    flex: 1;
+    text-align: center;
     color: rgb(255, 255, 255);
 }
 
@@ -64,15 +98,57 @@
     color: rgb(2, 2, 26);
 }
 
-/* @media screen and (max-width: 768px) {
-    .game-page-header,
-    .game-page-chat {
-        width: 100%;
-    }
-} */
+.humbugger-responsive {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0.25rem;
+}
+
+.humbugger-responsive-icon {
+    stroke: #fff;
+    height: 2rem;
+}
+
+.humbugger-responsive:hover {
+    background-color: #333333;
+}
 
 @media screen and (max-width: 500px) {
     .message {
         max-width: 95%;
     }
+}
+
+@media screen and (max-width: 1000px) {
+    .game-list {
+        display: none;
+    }
+
+    .humbugger-responsive {
+        display: flex;
+    }
+
+    .responsive-list-open .game-list {
+        display: flex;
+    }
+
+    .responsive-list-open .game-content {
+        display: none;
+    }
+
+    .responsive-list-close .game-list {
+        display: none;
+    }
+
+    .responsive-list-close .game-content {
+        display: flex;
+    }
+
+    .game-list .humbugger-responsive{
+        transform: rotateY(180deg);
+    }
+
 }
