@@ -230,7 +230,7 @@ export default {
         {
             id: 31,
             text: "Com todas as pistas e evidências reunidas, você finalmente descobre a verdade por trás do assassinato na mansão. Agora é hora de confrontar o assassino e garantir que ele seja levado à justiça.",
-            options: [{ text: "Confrontar o assassino e garantir justiça", nextPage: -1 }],
+            options: [{ text: "Recomeçar a história", nextPage: 0 }],
         },
     ]
 }
