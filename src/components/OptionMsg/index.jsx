@@ -3,7 +3,7 @@ import "./style.css";
 export default function OptionMsg({ children, name, value, onChange}) {
     const id = `abc-${Math.round(Math.random() * 100)}`;
     return (
-        <div>
+        <div className="option-msg-container">
 
             <input
                 type="radio"
@@ -13,7 +13,9 @@ export default function OptionMsg({ children, name, value, onChange}) {
                 className="radio-msg"
                 value={value} />
 
-            <label htmlFor={id}>{children}</label>
+            <label 
+            htmlFor={id}
+            className="radio-msg-label">{children}</label>
         </div>
     );
 }

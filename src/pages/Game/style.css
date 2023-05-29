@@ -86,16 +86,15 @@
 .btn-send-action {
     transition: background-color 0.25s linear;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-top: 1rem;
     border-radius: 0.5rem;
     background-color: rgb(29, 29, 167);
-    color: rgb(5, 5, 83);
+    color: rgb(255, 255, 255);
 }
 
 .btn-send-action:hover {
     background-color: rgb(19, 19, 116);
-    color: rgb(2, 2, 26);
 }
 
 .humbugger-responsive {
@@ -123,6 +122,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+
+    .game-content {
+        padding: 0;
+    }
+
     .game-list {
         display: none;
     }
@@ -147,7 +151,7 @@
         display: flex;
     }
 
-    .game-list .humbugger-responsive{
+    .game-list .humbugger-responsive {
         transform: rotateY(180deg);
     }
 
